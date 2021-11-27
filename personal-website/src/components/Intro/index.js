@@ -20,7 +20,9 @@ const Intro = () => {
                     Software Engineer | Web Developer
                 </IntroP>
                 <IntroBtnWrapper>
-                    <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} primary = 'true' dark = 'true'>
+                    <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} primary = 'true' dark = 'true' smooth={true}
+                                duration={500}
+                                spy={true}>
                         Get Started {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </IntroBtnWrapper>

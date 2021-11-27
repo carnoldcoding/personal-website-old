@@ -15,7 +15,8 @@ export const homeObjOne = {
     alt: 'img-alt',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    whereTo: 'resume'
 }
 
 export const homeObjTwo = {
@@ -32,5 +33,6 @@ export const homeObjTwo = {
     alt: 'img-alt',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    whereTo: 'projects'
 }

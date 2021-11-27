@@ -5,7 +5,7 @@ import {InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper,
 TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElements'
 
 const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description,
-buttonLabel, img, alt, primary, dark, dark2}) => {
+buttonLabel, img, alt, primary, dark, dark2, whereTo}) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -17,7 +17,7 @@ buttonLabel, img, alt, primary, dark, dark2}) => {
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to="home"
+                                <Button to={whereTo}
                                 smooth={true}
                                 duration={500}
                                 spy={true}
