@@ -25,7 +25,7 @@ export const NavbarContainer = styled.div`
     justify-content: space-between;
     height: 80px;
     z-index: 1;
-    width: 100%;
+    /* width: 100%; */
     padding: 0 24px;
     max-width: 1100px;
     margin: 0;
@@ -60,8 +60,8 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
     display: flex;
     align-items: center;
-    list-style: none;
     text-align: center;
+    list-style: none;
     margin-right: -22px;
 
     @media screen and (max-width: 768px){
@@ -84,6 +84,11 @@ export const NavLinks = styled(LinkScroll)`
 
     &.active {
         border-bottom: 3px solid #01bf71;
+    }
+
+    &:hover {
+        transition: all .2s ease-in-out;
+        color: #01bf71;
     }
 `
 

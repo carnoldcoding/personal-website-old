@@ -10,12 +10,12 @@ const Intro = () => {
         setHover(!hover);
     }
     return (
-        <IntroContainer>
+        <IntroContainer id="home">
             <IntroBg>
                 <VideoBg autoPlay loop muted src={Video} type = 'video/mp4' />
             </IntroBg>
             <IntroContent>
-                <IntroH1>Carnold Coding</IntroH1>
+                <IntroH1>Cameron Arnold</IntroH1>
                 <IntroP>
                     This is my website fuckers, enjoy it or explode
                 </IntroP>
