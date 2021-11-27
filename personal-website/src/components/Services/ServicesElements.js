@@ -54,6 +54,11 @@ export const ServicesCard = styled.div`
     }
 `
 
+export const ServicesCardLink = styled.a`
+    text-decoration: none;
+    color: #000;
+`
+
 export const ServicesIcon = styled.img`
     height: 160px;
     width:  160px;
