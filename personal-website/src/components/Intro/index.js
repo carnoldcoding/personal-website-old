@@ -17,7 +17,7 @@ const Intro = () => {
             <IntroContent>
                 <IntroH1>Cameron Arnold</IntroH1>
                 <IntroP>
-                    This is my website fuckers, enjoy it or explode
+                    Software Engineer | Web Developer
                 </IntroP>
                 <IntroBtnWrapper>
                     <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} primary = 'true' dark = 'true'>

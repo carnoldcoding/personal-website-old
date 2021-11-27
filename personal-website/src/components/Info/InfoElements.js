@@ -57,11 +57,11 @@ export const TopLine = styled.p`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
 `
 
 export const Heading = styled.h1`
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     margin-top: 24px;
     font-size:40px;
     line-height: 1.1%;
