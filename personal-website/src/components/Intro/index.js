@@ -22,7 +22,7 @@ const Intro = () => {
                 <IntroBtnWrapper>
                     <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} primary = 'true' dark = 'true' smooth={true}
                                 duration={500}
-                                spy={true}>
+                                spy={true} offset={-40}>
                         Get Started {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </IntroBtnWrapper>
