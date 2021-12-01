@@ -1,9 +1,13 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Video from '../../videos/video.mp4'
 import { IntroContainer, VideoBg, IntroBg, IntroContent, IntroH1, IntroP, IntroBtnWrapper, ArrowForward, ArrowRight } from './IntroElements'
-import {Button } from '../ButtonElement'
+import {Button} from '../ButtonElement'
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const Intro = () => {
+    useEffect(() =>{Aos.init({ duration: 3000});
+    }, []);
     const [hover, setHover] = useState(false);
 
     const onHover = () => {
@@ -14,7 +18,7 @@ const Intro = () => {
             <IntroBg>
                 <VideoBg autoPlay loop muted src={Video} type = 'video/mp4' />
             </IntroBg>
-            <IntroContent>
+            <IntroContent data-aos="fade-in">
                 <IntroH1>Cameron Arnold</IntroH1>
                 <IntroP>
                     Software Engineer | Web Developer
