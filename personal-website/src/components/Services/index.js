@@ -14,9 +14,10 @@ const Services = () => {
         <>
             <ServicesContainer id="projects">
                 <ServicesH1 data-aos="fade-down">Projects</ServicesH1>
-                <ServicesWrapper data-aos="fade-up">
+                <ServicesWrapper >
                     
-                    <ServicesCardLink href="https://github.com/carnoldcoding/Personal-Website" 
+                    <ServicesCardLink data-aos="flip-left"
+                    href="https://github.com/carnoldcoding/Personal-Website" 
                     target="_blank">
                         <ServicesCard>
                             <ServicesIcon src={icon1}/>
@@ -25,7 +26,7 @@ const Services = () => {
                         </ServicesCard>
                     </ServicesCardLink>
 
-                    <ServicesCardLink href="https://github.com/carnoldcoding/Covid-and-Politics"
+                    <ServicesCardLink data-aos="flip-left" href="https://github.com/carnoldcoding/Covid-and-Politics"
                     target="_blank">
                         <ServicesCard>
                             <ServicesIcon src={icon2}/>
@@ -34,7 +35,7 @@ const Services = () => {
                         </ServicesCard>
                         </ServicesCardLink>
 
-                    <ServicesCardLink href="https://github.com/carnoldcoding/Personal-Website"
+                    <ServicesCardLink data-aos="flip-left" href="https://github.com/carnoldcoding/Personal-Website"
                     target="_blank">
                         <ServicesCard>
                             <ServicesIcon src={icon3}/>
