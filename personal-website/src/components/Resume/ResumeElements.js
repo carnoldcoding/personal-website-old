@@ -26,13 +26,15 @@ export const ImgWrap = styled.div`
     max-width: 1000px;
     height: 100%;
     display: flex;
+    justify-content: flex-end;
 `
 
 export const Img = styled.img`
-    width: 50%;
+    width: 45%;
     margin: 0 0 10px 0;
     padding-right: 0;
     border-radius: 100px;
+    box-shadow: 0px 0px 15px 5px #0ff;
 `
 
 export const ResumeRow = styled.div`
@@ -105,6 +107,8 @@ export const ResumeH1 = styled.h1`
 `
 export const Column1 = styled.div`
     margin-bottom: 30px;
+    margin-top: 10px;
+    margin-right: 15px;
     padding: 0 15px;
     flex: 1;
     align-content: center;
