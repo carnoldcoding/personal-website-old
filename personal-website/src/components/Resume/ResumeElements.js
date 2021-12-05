@@ -27,6 +27,8 @@ export const ImgWrap = styled.div`
     height: 100%;
     display: flex;
     justify-content: flex-end;
+
+    
 `
 
 export const Img = styled.img`
@@ -34,7 +36,17 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0;
     border-radius: 100px;
-    box-shadow: 0px 0px 15px 5px #0ff;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        box-shadow: 0px 0px 15px 5px #0ff;
+    }
+`
+export const ResumeLink = styled.a`
+    text-decoration: none;
+    color: #000;
 `
 
 export const ResumeRow = styled.div`
@@ -56,7 +68,14 @@ export const TextWrapper = styled.div`
     //Debugging
     background: rgba(97, 201, 255, .3);
     border-radius: 10px;
-    box-shadow: 0px 0px 15px 1px #0ff;
+    
+    /* &:hover{
+        transform: scale(1.1);
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+        box-shadow: 0px 0px 15px 5px #0ff;
+    } */
+
 `
 
 export const TopLine = styled.p`

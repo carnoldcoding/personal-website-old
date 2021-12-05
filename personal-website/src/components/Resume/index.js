@@ -8,7 +8,7 @@ import {Button} from '../ButtonElement'
 
 import { ResumeContainer, ResumeWrapper, ResumeRow, 
     TextWrapper, TopLine, Heading, Subtitle, Column1, Column2,
-    ResumeH1, ImgWrap, BtnWrap, Img } from './ResumeElements'
+    ResumeH1, ImgWrap, BtnWrap, Img, ResumeLink } from './ResumeElements'
 
 const ResumeSection = () => {
     useEffect(() =>{Aos.init({ duration: 3000});
@@ -20,9 +20,11 @@ const ResumeSection = () => {
                 <TopLine data-aos="fade-down">My work credentials</TopLine>
                 <ResumeRow>
                     <Column1>
+                    <ResumeLink href="https://www.ithaca.edu/" target = "_blank">
                         <ImgWrap data-aos="fade-right">
                             <Img src = {IC}/>
                         </ImgWrap>
+                    </ResumeLink>
                     </Column1>
 
                     <Column2>
@@ -34,10 +36,12 @@ const ResumeSection = () => {
 
                 <ResumeRow>
                 <Column1>
+                    <ResumeLink href="https://42.fr/en/homepage/" target = "_blank">
                         <ImgWrap data-aos="fade-right">
                             <Img src = {SV}/>
                         </ImgWrap>
-                    </Column1>
+                    </ResumeLink>
+                </Column1>
 
                     <Column2>
                         <TextWrapper data-aos="fade-left">    
