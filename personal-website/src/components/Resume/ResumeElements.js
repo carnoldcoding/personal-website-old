@@ -23,9 +23,16 @@ export const ResumeWrapper = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
+    max-width: 1000px;
     height: 100%;
-    flex: 1;
+    display: flex;
+`
+
+export const Img = styled.img`
+    width: 50%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
+    border-radius: 100px;
 `
 
 export const ResumeRow = styled.div`
@@ -42,11 +49,12 @@ export const TextWrapper = styled.div`
     padding-right: 10px;
     padding-bottom: 60px;
     margin-right: 5px;
+    margin-top: 20px;
 
     //Debugging
-    background: #01bf71;
-    border-radius: 25px;
-    border: 1px #000 solid;
+    background: rgba(97, 201, 255, .3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 1px #0ff;
 `
 
 export const TopLine = styled.p`
@@ -85,7 +93,7 @@ export const Subtitle = styled.p`
 
 export const ResumeH1 = styled.h1`
     text-align: center;    
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #fff;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -96,19 +104,21 @@ export const ResumeH1 = styled.h1`
     }
 `
 export const Column1 = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     padding: 0 15px;
     flex: 1;
+    align-content: center;
 `
 
 export const Column2 = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     padding: 0 15px;
     flex: 3;
 `
 
 export const BtnWrap = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-top: 35px;
+    margin-left: 35px;
 `

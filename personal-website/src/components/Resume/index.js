@@ -2,11 +2,13 @@ import React, {useEffect} from 'react'
 import Aos from "aos";
 import "aos/dist/aos.css"
 import svg1 from '../../images/svg-1.svg'
+import IC from '../../images/IC.jpg'
+import SV from '../../images/42.png'
 import {Button} from '../ButtonElement'
 
 import { ResumeContainer, ResumeWrapper, ResumeRow, 
     TextWrapper, TopLine, Heading, Subtitle, Column1, Column2,
-    ResumeH1, ImgWrap, BtnWrap } from './ResumeElements'
+    ResumeH1, ImgWrap, BtnWrap, Img } from './ResumeElements'
 
 const ResumeSection = () => {
     useEffect(() =>{Aos.init({ duration: 3000});
@@ -18,37 +20,23 @@ const ResumeSection = () => {
                 <TopLine data-aos="fade-down">My work credentials</TopLine>
                 <ResumeRow>
                     <Column1>
-                        <TextWrapper data-aos="fade-right">
-                            <Subtitle>Bachelor of Science</Subtitle>
-                        </TextWrapper>
+                        <ImgWrap data-aos="fade-right">
+                            <Img src = {IC}/>
+                        </ImgWrap>
                     </Column1>
 
                     <Column2>
                         <TextWrapper data-aos="fade-left">    
-                            <Subtitle>Graduated from Ithaca College in August 2021</Subtitle>
+                            <Subtitle>Graduated from Ithaca College in August 2021. Made the Dean's List in 2020, and 2021.</Subtitle>
                         </TextWrapper>
                     </Column2>
                 </ResumeRow>
 
                 <ResumeRow>
-                    <Column1>
-                        <TextWrapper data-aos="fade-right">
-                            <Subtitle>Ithaca College Dean's List</Subtitle>
-                        </TextWrapper>
-                    </Column1>
-
-                    <Column2>
-                        <TextWrapper data-aos="fade-left">    
-                            <Subtitle>Nomination in 2021 and 2020</Subtitle>
-                        </TextWrapper>
-                    </Column2>
-                </ResumeRow>
-
-                <ResumeRow>
-                    <Column1>
-                        <TextWrapper data-aos="fade-right">
-                            <Subtitle>42 Silicon Valley</Subtitle>
-                        </TextWrapper>
+                <Column1>
+                        <ImgWrap data-aos="fade-right">
+                            <Img src = {SV}/>
+                        </ImgWrap>
                     </Column1>
 
                     <Column2>
@@ -58,11 +46,11 @@ const ResumeSection = () => {
                     </Column2>
                 </ResumeRow>
                 <BtnWrap data-aos="fade-right">
-                        <Button to="projects" primary = 'true' dark = 'false' smooth={true}
-                            duration={500}
-                            spy={true} offset={-40}> Next
-                        </Button>
-                    </BtnWrap>
+                    <Button to="projects" primary = 'true' dark = 'false' smooth={true}
+                        duration={500}
+                        spy={true} offset={-40}> Next
+                    </Button>
+                </BtnWrap>
 
             </ResumeWrapper>
         </ResumeContainer>
