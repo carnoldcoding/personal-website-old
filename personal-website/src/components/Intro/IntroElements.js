@@ -30,8 +30,6 @@ export const ImgWrap = styled.div`
     height: 100%;
     display: flex;
     justify-content: center;
-
-    
 `
 
 export const Img = styled.img`

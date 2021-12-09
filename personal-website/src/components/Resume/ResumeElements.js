@@ -28,6 +28,10 @@ export const ImgWrap = styled.div`
     display: flex;
     justify-content: flex-end;
 
+    @media screen and (max-width: 768px){
+        min-width: 230px;
+    }
+
     
 `
 
@@ -75,6 +79,11 @@ export const TextWrapper = styled.div`
         cursor: pointer;
         box-shadow: 0px 0px 15px 5px #0ff;
     } */
+
+    @media screen and (max-width: 768px){
+        height: auto;
+        background: #000;
+    }
 
 `
 
