@@ -21,7 +21,7 @@ const Intro = () => {
             </IntroBg>
             <IntroContent data-aos="fade-in">
                 <ImgWrap>
-                <Img src = {CC} />
+                    <Img src = {CC} />
                 </ImgWrap>
                 <IntroH1>Cameron Arnold</IntroH1>
                 <IntroP>

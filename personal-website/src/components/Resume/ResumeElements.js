@@ -23,20 +23,14 @@ export const ResumeWrapper = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    max-width: 1000px;
-    height: 100%;
     display: flex;
     justify-content: flex-end;
 
-    @media screen and (max-width: 768px){
-        min-width: 230px;
-    }
-
     
 `
-
 export const Img = styled.img`
-    width: 45%;
+    max-width: 40%;
+    height: auto;
     margin: 0 0 10px 0;
     padding-right: 0;
     border-radius: 100px;
@@ -47,7 +41,13 @@ export const Img = styled.img`
         cursor: pointer;
         box-shadow: 0px 0px 15px 5px #0ff;
     }
+
+    @media screen and (max-width: 500px) {
+        max-height: 100px;
+        max-width: 100px;
+    }
 `
+
 export const ResumeLink = styled.a`
     text-decoration: none;
     color: #000;

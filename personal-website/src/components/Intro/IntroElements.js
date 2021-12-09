@@ -26,24 +26,23 @@ export const IntroContainer = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    max-width: 1000px;
-    height: 100%;
     display: flex;
     justify-content: center;
 `
 
 export const Img = styled.img`
-    width: 45%;
+    width: 100%;
+    height: auto;
     margin: 0 0 10px 0;
     padding-right: 0;
     border-radius: 100px;
 
-    &:hover{
+    /* &:hover{
         transform: scale(1.1);
         transition: all .2s ease-in-out;
         cursor: pointer;
         box-shadow: 0px 0px 15px 5px #0ff;
-    }
+    } */
 `
 
 export const IntroBg = styled.div`
