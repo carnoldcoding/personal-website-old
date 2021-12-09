@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import Video from '../../videos/video.mp4'
-import { IntroContainer, VideoBg, IntroBg, IntroContent, IntroH1, IntroP, IntroBtnWrapper, ArrowForward, ArrowRight } from './IntroElements'
+import { IntroContainer, VideoBg, IntroBg, IntroContent, IntroH1, IntroP, IntroBtnWrapper, ArrowForward, ArrowRight, Img, ImgWrap } from './IntroElements'
 import {Button} from '../ButtonElement'
+import CC from '../../images/CC-Glow.png'
 import Aos from "aos";
 import "aos/dist/aos.css"
 
@@ -19,6 +20,9 @@ const Intro = () => {
                 <VideoBg autoPlay loop muted src={Video} type = 'video/mp4' />
             </IntroBg>
             <IntroContent data-aos="fade-in">
+                <ImgWrap>
+                <Img src = {CC} />
+                </ImgWrap>
                 <IntroH1>Cameron Arnold</IntroH1>
                 <IntroP>
                     Software Engineer | Web Developer
