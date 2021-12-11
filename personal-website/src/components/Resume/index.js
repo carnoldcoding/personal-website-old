@@ -22,7 +22,7 @@ const ResumeSection = () => {
                     <ResumeHeaderRow>
                         <ResumeH1>Resume</ResumeH1>
 
-                        <ResumeDownloadLink href="./Resume.pdf" download="Arnold_Cameron_Resume.pdf">
+                        <ResumeDownloadLink href="https://drive.google.com/file/d/1j_d-oPAo7BTxyVtaZafBMeP4JZaQpnSW/view?usp=sharing" target="_blank">
                             <FaFileDownload/>
                         </ResumeDownloadLink>
                     </ResumeHeaderRow>
