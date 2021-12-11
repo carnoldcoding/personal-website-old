@@ -4,11 +4,13 @@ import "aos/dist/aos.css"
 import svg1 from '../../images/svg-1.svg'
 import IC from '../../images/IC.jpg'
 import SV from '../../images/42.png'
+import {FaFileDownload, FaDownload} from 'react-icons/fa'
 import {Button} from '../ButtonElement'
 
 import { ResumeContainer, ResumeWrapper, ResumeRow, 
     TextWrapper, TopLine, Heading, Subtitle, Column1, Column2,
-    ResumeH1, ImgWrap, BtnWrap, Img, ResumeLink } from './ResumeElements'
+    ResumeH1, ImgWrap, BtnWrap, Img, ResumeLink,
+    ResumeDownloadLink, ResumeHeader, ResumeHeaderRow } from './ResumeElements'
 
 const ResumeSection = () => {
     useEffect(() =>{Aos.init({ duration: 3000});
@@ -16,8 +18,18 @@ const ResumeSection = () => {
     return (
         <ResumeContainer id="resume">
             <ResumeWrapper id="resumeWrapper"> 
-                <ResumeH1 data-aos="fade-down">Resume</ResumeH1>
-                <TopLine data-aos="fade-down">My work credentials</TopLine>
+                <ResumeHeader data-aos="fade-down">
+                    <ResumeHeaderRow>
+                        <ResumeH1>Resume</ResumeH1>
+
+                        <ResumeDownloadLink href="./Resume.pdf" download="Arnold_Cameron_Resume.pdf">
+                            <FaFileDownload/>
+                        </ResumeDownloadLink>
+                    </ResumeHeaderRow>
+
+                    <TopLine>My work credentials</TopLine>
+
+                </ResumeHeader>
                 <ResumeRow>
                     <Column1>
                     <ResumeLink href="https://www.ithaca.edu/" target = "_blank">

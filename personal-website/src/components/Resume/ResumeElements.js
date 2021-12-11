@@ -154,3 +154,27 @@ export const BtnWrap = styled.div`
     margin-top: 35px;
     margin-left: 35px;
 `
+
+export const ResumeHeader = styled.div`
+
+`
+export const ResumeDownloadLink = styled.a`
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    padding-left: 15px;
+    margin-top: 15px;
+
+    &:hover{
+        color: #01bf71;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+    }
+`
+
+export const ResumeHeaderRow = styled.a`
+    display: flex;
+    justify-content: center;
+    margin-right: 15px;
+`
